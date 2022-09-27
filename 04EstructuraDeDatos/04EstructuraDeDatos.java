@@ -1,4 +1,4 @@
-/**Vamos a crear los 14 programas dentro de un menu de seleccion de la tarea, comprendido por:
+/*Vamos a crear los 14 programas dentro de un menu de seleccion de la tarea, comprendido por:
  * 1.- Bono o descuento por edad
  * 2.- Convertir numeros decimales a binarios
  * 3.- convertir temperaturas
@@ -14,8 +14,10 @@
  * 13.- Calculadora
  * 14.- Salir
  */
-
 import java.util.Scanner;
+
+import javax.sound.midi.Soundbank;
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 class EstructuraDatos {
 
@@ -211,11 +213,43 @@ class EstructuraDatos {
                         }
                         System.out.println();
                     }
-                    
-                    
-                
                     break;
+                    
+                    case 10:
+                    System.out.println("inserte un numero para el cuadrado");
+                    ladoo = entrada.nextInt();
+                    if(ladoo >= 0 && ladoo<= 20){
+                        for(int i = 0; i < ladoo; i++){
+                            System.out.print("*");
+                        }
+                        System.out.println();
+                        for(int i= 0; i < ladoo-2; i++){
+                            System.out.print("*");
+                            for(int j=0;j<ladoo-2; j++){
+                                System.out.print(" ");
+                            }
+                            System.out.println("*");
+
+                        }
+
+                        for(int i = 0; i < ladoo; i++){
+                            System.out.print("*");
+                        
+                        }
+
+
+
+
+
+                    }
+                    break;
+                    case 11:
+                    
+
                 }
+
+                
+                
 
                 System.out.println("Deseas repetir el programa, escribe s para si");
                 letra = entrada.next().charAt(0);
