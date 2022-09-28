@@ -16,9 +16,6 @@
  */
 import java.util.Scanner;
 
-import javax.sound.midi.Soundbank;
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-
 class EstructuraDatos {
 
     public static void main(String[] args){
@@ -26,7 +23,7 @@ class EstructuraDatos {
         Scanner entrada = new Scanner(System.in)){
             //aqui van a ir las variables
             float  num,costo, cantidad, acumulador,total=0 ,articulosTotal=0;
-            int opcion, numbinario, edad, opcion1,  cneg=0 ,cpos=0, cneutro=0, Descuento=0, numeroF=0, Factorial=1,ladoo=0;
+            int opcion, numbinario, edad, opcion1,  cneg=0 ,cpos=0, cneutro=0, Descuento=0, numeroF=0, Factorial=1,ladoo=0,u=0;
             char letra,articulo;
             String binario = "" ;
             double  farenheit, centigrados, grados,Rankine,kelvin, k=273.15;
@@ -244,6 +241,23 @@ class EstructuraDatos {
                     }
                     break;
                     case 11:
+                    System.out.println("inserte un numero para el cuadrado");
+                    ladoo = entrada.nextInt();
+                    while(u<=3){
+                        for(int j=0;j<=ladoo;j++) {
+                            System.out.print(" *");                            
+                            
+                        }
+                        System.out.println();
+                        for(int j=0;j<ladoo;j++) {
+                            System.out.print("* ");                            
+                            
+                        }
+                        System.out.println();
+                        u++;
+                        
+                    }
+                    break;
                     
 
                 }
