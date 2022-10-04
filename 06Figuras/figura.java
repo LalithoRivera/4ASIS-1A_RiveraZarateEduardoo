@@ -65,26 +65,40 @@ public class figura {
         switch(opcion){
             case 1:
                
-                    try{
-                        System.out.println("Ingresa la base del triangulo: ");
                     
+                        System.out.println("Ingresa la base del triangulo: ");
+                        try{
                         base = entrada.nextDouble();
                         System.out.println("Ingrese la altura del triangulo: ");
                         altura = entrada.nextDouble();
                         area = (base*altura)/2;
                         System.out.println("El area del triangulo es: " + area);
-
-                    }catch(Exception e){
+                    }catch(Exception  e){
                         System.out.println("Ingrese unicamente valores numericos");
                         System.out.println("Error: " + e.getMessage());
                         System.out.println(e.getStackTrace()); 
 
                     }
+
+                    
                 
                 break;
             case 2:
-            
-                System.out.println("tarea");
+            try {
+                System.out.println("ingrese el primer lado: ");
+                lado = entrada.nextDouble();
+                System.out.println("ingrese el segundo lado: ");
+                lado2 = entrada.nextDouble();
+                System.out.println("ingrese el tercer lado: ");
+                lado3 = entrada.nextDouble();
+                perimetro = lado+lado2+lado3;
+                System.out.println("el perimetro es : "+perimetro);
+            } catch (Exception e) {
+                System.out.println("Ingrese unicamente valores numericos");
+                        System.out.println("Error: " + e.getMessage());
+                        System.out.println(e.getStackTrace()); 
+                
+            }
                 break;
             default:
                 System.out.println("Opcion invalida ayoss");
@@ -98,18 +112,32 @@ public class figura {
 
         switch(opcion){
             case 1:
+            try{
                 System.out.println("Ingresa el radio del circulo: ");
                 lado = entrada.nextDouble();
 
                 area = Math.PI*lado*lado;
                 System.out.println("El area es de: " + area);
+            }catch(Exception  e){
+                System.out.println("Ingrese unicamente valores numericos");
+                System.out.println("Error: " + e.getMessage());
+                System.out.println(e.getStackTrace()); 
+
+            }
                 break;
             case 2:
+            try{
                 System.out.println("Ingrese el diametro del circulo: ");
                 lado = entrada.nextDouble();
 
                 perimetro = Math.PI*lado;
                 System.out.println("El perimetro es de : " + perimetro);
+            }catch(Exception  e){
+                System.out.println("Ingrese unicamente valores numericos");
+                System.out.println("Error: " + e.getMessage());
+                System.out.println(e.getStackTrace()); 
+
+            }
                 break;
             default:
                 System.out.println("Opcion no valida");
@@ -120,6 +148,45 @@ public class figura {
     }
 
     public void calcularRectangulo(){
+        System.out.println("ingrese 1 para el area y 2 para el perimetro : ");
+        opcion = entrada.nextInt();
+
+        switch(opcion){
+            case 1:
+            try{
+            System.out.println("Ingrese la base del rectangulo: ");
+            base = entrada.nextDouble();
+            System.out.println("ingrese la altura: ");
+            altura = entrada.nextDouble();
+            area = base*altura;
+            System.out.println("El area del perimetro es: "+area);
+        }catch(Exception  e){
+            System.out.println("Ingrese unicamente valores numericos");
+            System.out.println("Error: " + e.getMessage());
+            System.out.println(e.getStackTrace()); 
+
+        }
+            break;
+            case 2:
+            try{
+            System.out.println("Ingrese la base del rectangulo: ");
+            base = entrada.nextDouble();
+            System.out.println("ingrese la altura: ");
+            altura = entrada.nextDouble();
+            perimetro = base+base+altura+altura;
+            System.out.println("El perimetro es: "+perimetro);
+            }catch(Exception  e){
+            System.out.println("Ingrese unicamente valores numericos");
+            System.out.println("Error: " + e.getMessage());
+            System.out.println(e.getStackTrace()); 
+
+        }
+            break;
+
+        }
+            
+    
+
         
     }
     
