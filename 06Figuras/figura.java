@@ -191,8 +191,18 @@ public class figura {
     }
 
     public void calcularRectangulo() {
+        comprobacion = true;
+        while(comprobacion){
+            try{
+        entrada.nextLine();
         System.out.println("ingrese 1 para el area y 2 para el perimetro : ");
         opcion = entrada.nextInt();
+        comprobacion = false;
+        }catch(Exception e){
+            System.out.println("***ingrese la opcion correspondiente***");
+
+        }
+    }
 
         switch (opcion) {
             case 1:
