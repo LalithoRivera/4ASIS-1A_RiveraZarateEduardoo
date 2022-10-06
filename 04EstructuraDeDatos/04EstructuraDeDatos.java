@@ -205,7 +205,8 @@ class EstructuraDatos {
                     ladoo = entrada.nextInt();
                     for(int i=0; i<ladoo;i++) {
                         for(int j=0;j<ladoo;j++) {
-                            System.out.print("* ");                            
+                            System.out.print("* ");
+                            System.out.println("/");
                             
                         }
                         System.out.println();
