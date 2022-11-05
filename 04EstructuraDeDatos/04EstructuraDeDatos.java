@@ -266,7 +266,7 @@ class EstructuraDatos {
                 
                 
 
-                System.out.println("Deseas repetir el programa, escribe s para si");
+                System.out.println("\nDeseas repetir el programa, escribe s para si");
                 letra = entrada.next().charAt(0);
                 
 
